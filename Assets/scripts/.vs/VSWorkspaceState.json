@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\controllers",
+    "\\helpers",
+    "\\managers"
+  ],
+  "SelectedNode": "\\managers\\PlayerHealthManager.cs",
+  "PreviewInSolutionExplorer": false
+}
