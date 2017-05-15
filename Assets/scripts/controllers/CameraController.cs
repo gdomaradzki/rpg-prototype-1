@@ -34,7 +34,7 @@ public class CameraController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         // Sets the camera position to follow the target
         targetPosition = new Vector3(target.transform.position.x,
                                      target.transform.position.y,
