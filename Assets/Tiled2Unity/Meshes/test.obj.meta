@@ -9,22 +9,28 @@ ModelImporter:
     100002: mesh_0002
     100004: mesh_0003
     100006: //RootNode
+    100008: mesh_0004
     400000: mesh_0001
     400002: mesh_0002
     400004: mesh_0003
     400006: //RootNode
+    400008: mesh_0004
     2300000: mesh_0001
     2300002: mesh_0002
     2300004: mesh_0003
+    2300006: mesh_0004
     3300000: mesh_0001
     3300002: mesh_0002
     3300004: mesh_0003
+    3300006: mesh_0004
     4300000: mesh_0001
     4300002: mesh_0002
     4300004: mesh_0003
+    4300006: mesh_0004
     11400000: mesh_0001
     11400002: mesh_0002
     11400004: mesh_0003
+    11400006: mesh_0004
   materials:
     importMaterials: 0
     materialName: 0

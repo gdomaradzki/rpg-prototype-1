@@ -10,6 +10,9 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody2D body;
     private Vector2 moveInput;
     private bool playerMoving;
+    private bool attacking;
+    public float attackSpeed;
+    private float attackSpeedCount;
 
 	// Use this for initialization
 	void Start () {
@@ -31,7 +34,18 @@ public class PlayerController : MonoBehaviour {
         } else {
             body.velocity = Vector2.zero;
         }
-
+        if (Input.GetKeyDown(KeyCode.J)) {
+            attackSpeedCount = attackSpeed;
+            attacking = true;
+            animation.SetBool("Attacking", true);
+        }
+        if (attackSpeedCount > 0){
+            attackSpeedCount -= Time.deltaTime;
+        }
+        if (attackSpeedCount <= 0) {
+            attacking = false;
+            animation.SetBool("Attacking", false);
+        }
         animation.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
         animation.SetFloat("MoveY", Input.GetAxisRaw("Vertical"));
         animation.SetBool("PlayerMoving", playerMoving);
